@@ -1,26 +1,118 @@
-.design {
-  width: 500px;
-  height: 500px;
-  background-color: orange;
-  border-radius: 500px;
+@import url("https://fonts.googleapis.com/css2?family=Signika:wght@600&display=swap");
+
+body {
   display: flex;
+  justify-content: center;
   align-content: center;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(180deg, #d1dbf2, rgb(190, 228, 235));
 }
 
-.key {
-  transition: all 1s;
-  font: Verdana, bold, 50px;
-  color: #fbedd2;
-  font-size: 50px;
+.titlecard {
+  position: absolute;
+  background-color: #0c7c6f;
+  border: 15px solid #d1f5f1;
+  border-radius: 30px;
+  padding-top: 0.5%;
+  padding-left: 1%;
+  padding-right: 1%;
+  margin-top: 1.2%;
 }
 
-.playing {
-  color: red;
-  font-size: 55px;
+.title {
+  display: flex;
+  justify-content: center;
+  font-family: Signika, sans-serif;
+  font-size: 4em;
+  color: #fee05a;
+  padding: 0px;
+  margin-top: 1%;
+}
+
+#instructions {
+  display: flex;
+  justify-content: center;
+  font-size: 1.4em;
+  font-family: Signika, sans-serif;
+  color: #f5e3bf;
+  padding: 0px;
+  margin-top: -40px;
+  margin-bottom: 5px;
+}
+
+.tablecloth {
+  width: 85%;
+  height: 80%;
+  background-image: linear-gradient(0deg, transparent 50%, #e63333 50%),
+    linear-gradient(90deg, #f34141 50%, #f86d6d 50%);
+  background-size: 50px 50px, 50px 50px;
+  background-position: 0 0, 0 25px;
+  margin: auto;
+}
+
+.plateouter {
+  width: 80%;
+  height: 80%;
+  background-color: #54c4b6;
+  border-radius: 80%;
+  margin: auto;
+  margin-top: 6%;
+  display: flex;
+  z-index: 1;
+}
+
+.plateinner {
+  width: 85%;
+  height: 80%;
+  background-color: whitesmoke;
+  border-radius: 50%;
+  border: 10px solid #d1f5f1;
+  margin: auto;
+  display: flex;
+  z-index: 1;
+}
+
+.soup {
+  background-color: #b92d2e;
+  border: 5px solid #a42223;
+  width: 80%;
+  height: 75%;
+  border-radius: 50%;
+  margin: auto;
+  z-index: 1;
 }
 
 .letters {
   display: flex;
+  flex-wrap: wrap;
+  position: absolute;
   justify-content: center;
   align-content: center;
+  align-self: center;
+  width: 39%;
+  height: 27%;
+  max-height: 75%;
+  margin-top: 50px;
+}
+
+.key {
+  display: flex;
+  position: relative;
+  transition: all 1s;
+  font-family: "Signika", verdana;
+  color: orange;
+  font-size: 50px;
+  z-index: 0;
+}
+
+.playing {
+  display: flex;
+  position: relative;
+  color: #fee05a;
+  font-size: 50px;
+  border: none;
+  z-index: 2;
 }
