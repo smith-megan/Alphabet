@@ -1,0 +1,26 @@
+.design {
+  width: 500px;
+  height: 500px;
+  background-color: orange;
+  border-radius: 500px;
+  display: flex;
+  align-content: center;
+}
+
+.key {
+  transition: all 1s;
+  font: Verdana, bold, 50px;
+  color: #fbedd2;
+  font-size: 50px;
+}
+
+.playing {
+  color: red;
+  font-size: 55px;
+}
+
+.letters {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
